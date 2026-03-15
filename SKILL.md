@@ -381,6 +381,43 @@ Kullanıcı bir aktivite ile müzik istediğinde → `references/activities.md` 
 
 ---
 
+## Custom Mix & Micro-Aesthetics
+
+### Genre Karıştırma İsteği Tespiti
+
+Kullanıcı iki genre'ı birden istediğinde veya "ama" / "gibi ama" / "arası" kullandığında:
+→ `references/custom-mix.md` dosyasını oku.
+
+**Tetikleyiciler:**
+> "jazz ama enerjik" · "elektronik ama organik" · "arabesk ama modern" · "hip-hop ama sinematik"
+> "iki genre arası" · "karışık bir şey" · "X + Y füzyonu" · "hem X hem Y"
+
+**Akış:**
+1. A ve B genre'larını audio feature ekseninde karşılaştır
+2. Uyumluluk matrisine bak (✅✅ / ✅ / ⚠️)
+3. Bridge track seç — her iki genre'da da çalışan geçiş parçası
+4. Playlist sırasını kur: A güçlü → A hafif → Bridge → B hafif → B güçlü
+5. Füzyon için isim üret (borrowed vocab + tarif)
+
+### Micro-Aesthetic Tespiti
+
+Kullanıcı çok spesifik bir sahne, his veya niche TikTok estetiği tarif ettiğinde:
+→ `references/custom-mix.md` → Micro-Aesthetics bölümüne git.
+
+**Sahne bazlı tetikleyiciler:**
+> "2am diner" · "son tren" · "yabancı şehir otel odası" · "boş dans pisti sabah 4"
+> "sisli yolda araba" · "parti sonrası mutfak" · "son yaz" · "altın saat çatı"
+
+**TikTok micro-aesthetic tetikleyiciler:**
+> dreamcore · weirdcore · liminal space · goblincore · angelcore · witchcore
+> hauntology · vaporwave sadness · suburban gothic · soft apocalypse · indie sleaze
+> traumacore · maximalist · minimalist · coastal noir · dark romance
+
+**Türk micro-aesthetic tetikleyiciler:**
+> "istanbul melankoli" · "anadolu gurbet" · "türk gece hayatı / meyhane" · "boğaz sabahı"
+
+---
+
 ## TikTok & Gen-Z Estetik Vibes
 
 Kullanıcı TikTok dili, estetik terimler veya "[Yer] Nights" formatı kullandığında:
