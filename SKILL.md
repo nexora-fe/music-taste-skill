@@ -20,14 +20,20 @@ Playlist konsepti oluşturma, Spotify-style tag ve genre analizi için kapsamlı
 
 ## Genel Yaklaşım
 
-1. Kullanıcının isteğini **3 boyutta** analiz et:
-   - **Mood / Duygu**: nasıl hissettirmeli?
-   - **Bağlam / Aktivite**: nerede, ne yapılırken dinlenecek?
-   - **Estetik / Dönem**: vintage mi, modern mi, bölgesel mi?
+Endüstri liderleri (Spotify, AllMusic, RateYourMusic, Apple Music) müziği 4 boyutta tanımlar. Her isteği bu 4 eksende analiz et:
 
-2. Spotify-style çıktı üret (aşağıdaki format)
-3. Somut sanatçı ve şarkı önerileri ekle
-4. Gerekirse dünya müziği referanslarına başvur (bkz. `references/world-music.md`)
+| Boyut | Soru | Örnek |
+|-------|------|-------|
+| **Genre / Style** (AllMusic modeli) | Hangi tarz ve alt tarz? | "Post-punk revival", "Anadolu rock" |
+| **Mood / Duygu** (Spotify valence-energy matrisi) | Nasıl hissettirmeli? | "Melancholic ama hopeful", "Dark ve intense" |
+| **Theme / Aktivite** (AllMusic Theme axis) | Nerede, ne yaparken dinlenecek? | "Late night driving", "Study", "Dinner party" |
+| **Descriptor / Tekstür** (RateYourMusic yaklaşımı) | Ses nasıl? Atmosfer nedir? | "Sparse, ethereal, lo-fi", "Dense, wall-of-sound" |
+
+**Çalışma sırası:**
+1. 4 ekseni isteğe göre doldur — eksik eksenler varsa sor
+2. Genre + Mood + Theme kombinasyonundan Spotify tag'leri üret
+3. Descriptor katmanıyla "Vibe" açıklamasını zenginleştir
+4. Gerekirse dünya müziği / dönem / TikTok referanslarına başvur
 
 ---
 
@@ -78,6 +84,52 @@ Her playlist konsepti şu yapıda olmalı:
 [İlgili genre, dönem veya coğrafya hakkında 1-2 cümle ek bağlam. Gerekirse world-music.md veya decades.md'ye yönlendir.]
 ```
 
+Spotify API kullanılıyorsa, çıktıya şu bloğu da ekle:
+```
+📊 SPOTIFY API (spotify-api skili için)
+Seed genres : [genre1, genre2]
+Seed artists: [Sanatçı 1, Sanatçı 2]
+target_energy      : 0.x
+target_valence     : 0.x
+target_danceability: 0.x
+target_tempo       : xxx BPM
+target_acousticness: 0.x
+```
+
+---
+
+## Playlist Narrative Flow — Apple Music Prensibi
+
+Apple Music'in editorial philosophy'sinden: playlist bir **hikâye** gibi akar, rastgele sıralama değil.
+
+| Aşama | Pozisyon | Enerji Seviyesi | Amaç |
+|-------|----------|-----------------|------|
+| **Açılış** | %0–15 | Orta (mood set) | Dinleyiciyi içeri çek, taahhüt isteme |
+| **Build** | %15–40 | Yükselen | Güveni kazan, tempoyu artır |
+| **Zirve** | %40–65 | En yüksek | En iyi track'ler, en güçlü an |
+| **Gerileme** | %65–85 | Düşen | Yumuşatmaya başla |
+| **Kapanış** | %85–100 | Düşük-Orta | Güzel bir son, geri dönmek istettir |
+
+> Şarkıları önerirken bu akışı belirt: "Açılış: X → Zirve: Y → Kapanış: Z"
+
+---
+
+## RYM-Style Descriptor Katmanı
+
+RateYourMusic'in en güçlü yönü: genre değil, **ses nitelikleri** ile tanımlamak. Bu descriptors'ı "Vibe" bölümünde kullan:
+
+**Atmosfer:** `ethereal` `dark` `warm` `cold` `claustrophobic` `open` `dreamlike` `tense` `serene`
+
+**Tekstür / Ses:** `lo-fi` `polished` `raw` `dense` `sparse` `wall-of-sound` `minimalist` `noisy` `crystalline`
+
+**Enerji Eğrisi:** `slow build` `explosive opener` `steady groove` `ebbing` `intense throughout` `cathartic`
+
+**Lirik Ton:** `introspective` `narrative` `abstract` `political` `romantic` `nihilistic` `hopeful`
+
+**Prodüksiyon:** `analog warmth` `digital glitch` `bedroom production` `cinematic scale` `live feel` `sample-heavy`
+
+> Bu descriptor'ları playlist "Vibe" açıklamasında ve tag'lerde kullan. Örn: `#ethereal` `#slow-build` `#analog-warmth`
+
 ---
 
 ## Spotify Genre & Tag Sistemi — Kapsamlı Referans
@@ -111,20 +163,21 @@ Her playlist konsepti şu yapıda olmalı:
 **Estetik Ekseninde:**
 `#cottagecore` `#cyberpunk` `#vintage` `#cinematic` `#lo-fi` `#vaporwave` `#dark-academia` `#coquette` `#villain-arc` `#main-character` `#old-money` `#coastal` `#hyperpop-baddie`
 
-### Spotify Audio Features — Playlist Hedefleri
+### Spotify Audio Features — Tam 7 Feature Referansı
 
-Spotify her parçayı 0–1 arası puanlar. `spotify-api` varken `/recommendations` çağrısında bunları kullan:
+Spotify her parçayı 0–1 arası puanlar. `spotify-api` varken `/recommendations` çağrısında `target_*` parametresi olarak kullan:
 
-| Audio Feature | Düşük (0.0–0.3) | Orta (0.4–0.6) | Yüksek (0.7–1.0) |
-|---------------|-----------------|----------------|------------------|
-| **Energy** | Ambient, drone, klasik | Indie pop, lo-fi, folk | Techno, metal, trap |
-| **Valence** (mutluluk) | Dark, sad, melancholic | Bittersweet, chill | Happy, party, uplifting |
-| **Danceability** | Drone, classical, folk | Indie rock, R&B | House, reggaeton, afrobeats |
-| **Acousticness** | Electronic, metal | Indie rock, lo-fi | Folk, classical, arabesk |
-| **Instrumentalness** | Rap, pop, vocal | Trip-hop, ambient pop | Techno, classical, jazz |
+| Audio Feature | Ne Ölçer | Düşük (0.0–0.3) | Orta (0.4–0.6) | Yüksek (0.7–1.0) |
+|---------------|----------|-----------------|----------------|------------------|
+| **energy** | Yoğunluk ve aktivite | Ambient, drone, klasik | Indie pop, lo-fi, folk | Techno, metal, trap |
+| **valence** | Müzikal pozitiflik / mutluluk | Dark, sad, melancholic | Bittersweet, chill | Happy, party, uplifting |
+| **danceability** | Dans edilebilirlik (tempo + ritim stabilitesi) | Drone, prog, chamber | Indie rock, R&B, soul | House, reggaeton, afrobeats |
+| **acousticness** | Akustik olma güven skoru | Electronic, metal | Indie rock, lo-fi | Folk, classical, arabesk |
+| **instrumentalness** | Vokal yokluğu tahmini | Rap, pop, vocal R&B | Trip-hop, ambient pop | Techno, classical, film score |
+| **liveness** | Canlı performans olasılığı | Stüdyo kayıt | Semi-live, NPR Tiny Desk tarzı | Live album, konser kaydı |
+| **speechiness** | Konuşma sesi yoğunluğu | Enstrümantal, vokalsiz | Sung rap, spoken word karışımı | Podcast, spoken word, rap |
 
-> **Spotify Playlist Akışı:** Açılış → mood set et (orta enerji) → zirve (%40-60 arası) → kapanış (enerji düşür).
-> `spotify-api` kullanıyorsan `target_energy`, `target_valence`, `target_danceability`, `target_tempo` parametrelerini `/recommendations` endpoint'ine geçir.
+**2026 Spotify Algoritması Notu:** Retention-first model. Save > Stream. Playlist yapıldıktan sonra kullanıcıyı listeyi kaydetmeye teşvik et — bu organik büyüme için kritik. `target_valence` + `target_danceability` en güçlü korelasyonu gösteriyor.
 
 ### Tempo / Enerji Tag'leri — BPM Rehberi
 

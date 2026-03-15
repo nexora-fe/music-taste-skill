@@ -3,6 +3,11 @@
 Bu dosya, `SKILL.md`'nin yönlendirdiği durumlarda okunur.
 Bölgesel genre'lar, alt türler, karakteristik özellikler ve Spotify tag önerileri içerir.
 
+Her genre için **AllMusic 3-Boyut modeli** uygulanır:
+- **Genre/Style**: Tarz ve alt tarz
+- **Mood**: Yarattığı duygusal nitelik (RYM descriptor ile zenginleştirilmiş)
+- **Theme/Aktivite**: En uygun kullanım bağlamı
+
 ---
 
 ## Afrika
@@ -12,14 +17,20 @@ Bölgesel genre'lar, alt türler, karakteristik özellikler ve Spotify tag öner
 - **Karakteristik**: Poliritmik perküsyon, brass section, Yoruba dili, politik sözler
 - **Modern versiyonu**: Afropop — daha üretim odaklı, dans ağırlıklı
 - **Sanatçılar**: Fela Kuti, Burna Boy, WizKid, Tems, Angelique Kidjo
+- **Mood**: Joyous, empowering, groovy — RYM: `dense` `polished` `cathartic`
+- **Theme**: Party, summer, outdoor festival, Lagos nights
 - **Spotify Tags**: `#afrobeat` `#afropop` `#west-african` `#groovy` `#dance`
+- **Audio Features**: energy 0.7–0.9 · valence 0.6–0.9 · danceability 0.7–0.9 · tempo 90–115
 
 ### Amapiano
 - **Köken**: Güney Afrika, 2010'lar sonu
 - **Karakteristik**: Log drum bass, jazzy piyano, slow tempo house
 - **Sanatçılar**: DJ Maphorisa, Kabza De Small, Uncle Waffles, Black Coffee
 - **2025 Notu**: 2025 itibarıyla küresel yayılım +700% büyüme; WorldPop genre'ının omurgalarından biri haline geldi
+- **Mood**: Euphoric, hypnotic, communal — RYM: `sparse` `steady groove` `warm`
+- **Theme**: Club, late night dance, sunset, WorldPop crossover
 - **Spotify Tags**: `#amapiano` `#south-african` `#afro-house` `#dance` `#groovy`
+- **Audio Features**: energy 0.6–0.8 · valence 0.5–0.8 · danceability 0.7–0.9 · tempo 100–115
 
 ### Afrofuturism
 - **Köken**: Pan-Afrika, 2010'lar — geleneksel kökler + elektronik prodüksiyon füzyonu
@@ -47,7 +58,10 @@ Bölgesel genre'lar, alt türler, karakteristik özellikler ve Spotify tag öner
 - **Köken**: Brezilya, 1950'ler sonu
 - **Karakteristik**: Samba ritmi + jazz armonisi, narin gitar, fısıltılı vokaller
 - **Sanatçılar**: João Gilberto, Antônio Carlos Jobim, Stan Getz, Astrud Gilberto
+- **Mood**: Romantic, serene, sophisticated — RYM: `warm` `sparse` `analog warmth`
+- **Theme**: Dinner party, beachside, old money, Havana/Rio nights, café
 - **Spotify Tags**: `#bossa-nova` `#brazilian` `#jazz` `#chill` `#beachside` `#romantic`
+- **Audio Features**: energy 0.2–0.4 · valence 0.5–0.8 · acousticness 0.7–0.9 · danceability 0.4–0.6 · tempo 80–110
 
 ### Cumbia
 - **Köken**: Kolombiya, yaygın olarak tüm Latin Amerika
@@ -101,18 +115,27 @@ Bölgesel genre'lar, alt türler, karakteristik özellikler ve Spotify tag öner
 - **Köken**: Türkiye, 1960-70'ler
 - **Karakteristik**: Türkü melodileri + elektro gitar + psychedelic rock füzyonu
 - **Sanatçılar**: Barış Manço, Cem Karaca, Erkin Koray, Moğollar
+- **Mood**: Bittersweet, nostalgic, rebellious — RYM: `warm` `raw` `analog warmth`
+- **Theme**: Nostalji, Türkiye 70'ler, road trip, vintage Anadolu
 - **Spotify Tags**: `#anatolian-rock` `#turkish` `#psychedelic` `#vintage` `#folk-rock`
+- **Audio Features**: energy 0.5–0.7 · valence 0.3–0.6 · acousticness 0.3–0.6 · tempo 90–120
 
 ### Türk Halk Müziği / Türkü
 - **Karakteristik**: Saz (bağlama), yerel ağız, anlatıcı geleneği
 - **Sanatçılar**: Aşık Veysel, Neşet Ertaş, Zülfü Livaneli
+- **Mood**: Melancholic, storytelling, spiritual — RYM: `sparse` `acoustic` `narrative`
+- **Theme**: Akşam yemeği, Anadolu, memleket özlemi, meditation
 - **Spotify Tags**: `#turkish-folk` `#türkü` `#acoustic` `#storytelling` `#traditional`
+- **Audio Features**: energy 0.2–0.5 · valence 0.2–0.5 · acousticness 0.7–1.0 · tempo 70–110
 
 ### Arabesk
 - **Köken**: Türkiye, 1970-80'ler
 - **Karakteristik**: Arap müziği etkisi, kentsel hüzün, orkestrali
 - **Sanatçılar**: Orhan Gencebay, İbrahim Tatlıses, Müslüm Gürses
+- **Mood**: Deeply melancholic, cathartic, introspective — RYM: `warm` `dense` `introspective`
+- **Theme**: Istanbul nights, late night, kentsel hüzün, "hüzün" estetiği
 - **Spotify Tags**: `#arabesk` `#turkish` `#melancholic` `#nostalgic` `#urban-folk`
+- **Audio Features**: energy 0.2–0.4 · valence 0.1–0.3 · acousticness 0.5–0.8 · tempo 65–90
 
 ### Türk Trap / Drill (2020s)
 - **Köken**: Türkiye, 2018'den günümüze; SoundCloud ve TikTok ekosistemi
@@ -169,7 +192,10 @@ Bölgesel genre'lar, alt türler, karakteristik özellikler ve Spotify tag öner
 - **Köken**: Portekiz, Lizbon
 - **Karakteristik**: Saudade (özlem), Portekiz gitarı, hüzünlü vokaller
 - **Sanatçılar**: Amália Rodrigues, Mariza, Ana Moura
+- **Mood**: Deeply melancholic, longing, cathartic — RYM: `sparse` `warm` `introspective` `analog warmth`
+- **Theme**: Lisbon nights, late night, hüzün, coastal grandmother (dark versiyon)
 - **Spotify Tags**: `#fado` `#portuguese` `#melancholic` `#saudade` `#acoustic`
+- **Audio Features**: energy 0.1–0.3 · valence 0.1–0.3 · acousticness 0.8–1.0 · instrumentalness 0.0–0.2 · tempo 60–85
 
 ### Flamenco
 - **Köken**: İspanya, Endülüs

@@ -94,28 +94,34 @@ Kullanıcı bunları söylüyorsa, o kültürel anı anla ve karşılık ver:
 
 ---
 
-## Spotify Audio Features — Genre Başına Hedef Değerler
+## Spotify Audio Features — Genre & Estetik Başına Hedef Değerler
 
-`spotify-api` kullanıldığında `/recommendations` endpoint'inde bu değerleri hedefle:
+`spotify-api` kullanıldığında `/recommendations` endpoint'ine `target_*` parametresi olarak geçir.
+Tam 7-feature referansı için SKILL.md → "Spotify Audio Features" bölümüne bak.
 
-| Genre/Estetik | Energy | Valence | Danceability | Acousticness | Tempo (BPM) |
-|---------------|--------|---------|--------------|--------------|-------------|
-| Dark Academia | 0.3–0.5 | 0.1–0.3 | 0.3–0.5 | 0.5–0.8 | 70–100 |
-| Hot Girl Summer | 0.7–0.9 | 0.7–0.9 | 0.7–0.9 | 0.0–0.2 | 110–140 |
-| Fairuz Nights | 0.2–0.5 | 0.2–0.5 | 0.2–0.4 | 0.6–0.9 | 60–90 |
-| Balkan Nights | 0.5–0.8 | 0.4–0.7 | 0.5–0.8 | 0.3–0.6 | 90–140 |
-| Villain Arc | 0.5–0.8 | 0.0–0.3 | 0.4–0.6 | 0.1–0.4 | 80–120 |
-| Cottagecore | 0.2–0.4 | 0.5–0.8 | 0.3–0.5 | 0.7–1.0 | 70–100 |
-| Healing Era | 0.2–0.4 | 0.4–0.7 | 0.2–0.4 | 0.6–1.0 | 60–90 |
-| Phonk/Driving | 0.7–0.9 | 0.1–0.4 | 0.6–0.8 | 0.0–0.1 | 130–160 |
-| Coquette | 0.2–0.5 | 0.3–0.6 | 0.3–0.5 | 0.4–0.8 | 70–100 |
-| Party/Club | 0.8–1.0 | 0.6–0.9 | 0.8–1.0 | 0.0–0.1 | 120–140 |
-| Lo-fi Study | 0.2–0.4 | 0.4–0.6 | 0.5–0.7 | 0.4–0.7 | 75–95 |
-| Main Character | 0.5–0.8 | 0.5–0.8 | 0.4–0.6 | 0.2–0.5 | 90–120 |
-| Old Money/Jazz | 0.2–0.4 | 0.4–0.7 | 0.4–0.6 | 0.5–0.8 | 70–120 |
-| Hyperpop | 0.8–1.0 | 0.5–0.9 | 0.7–0.9 | 0.0–0.1 | 140–180 |
-| Balkan Nights | 0.5–0.8 | 0.4–0.7 | 0.5–0.8 | 0.3–0.6 | 100–140 |
-| Tokyo Nights | 0.4–0.7 | 0.5–0.8 | 0.5–0.7 | 0.2–0.5 | 100–130 |
+| Genre/Estetik | energy | valence | danceability | acousticness | instrumentalness | tempo (BPM) | RYM Descriptor |
+|---------------|--------|---------|--------------|--------------|-----------------|-------------|----------------|
+| **Dark Academia** | 0.3–0.5 | 0.1–0.3 | 0.3–0.5 | 0.5–0.8 | 0.2–0.5 | 70–100 | `dark` `sparse` `introspective` |
+| **Hot Girl Summer** | 0.7–0.9 | 0.7–0.9 | 0.7–0.9 | 0.0–0.2 | 0.0–0.1 | 110–140 | `polished` `explosive` `confident` |
+| **Fairuz Nights** | 0.2–0.5 | 0.2–0.5 | 0.2–0.4 | 0.6–0.9 | 0.1–0.4 | 60–90 | `warm` `ethereal` `narrative` |
+| **Balkan Nights** | 0.5–0.8 | 0.4–0.7 | 0.5–0.8 | 0.3–0.6 | 0.1–0.3 | 100–140 | `dense` `cathartic` `live feel` |
+| **Villain Arc** | 0.5–0.8 | 0.0–0.3 | 0.4–0.6 | 0.1–0.4 | 0.1–0.3 | 80–120 | `dark` `tense` `cinematic scale` |
+| **Cottagecore** | 0.2–0.4 | 0.5–0.8 | 0.3–0.5 | 0.7–1.0 | 0.2–0.5 | 70–100 | `warm` `sparse` `analog warmth` |
+| **Healing Era** | 0.2–0.4 | 0.4–0.7 | 0.2–0.4 | 0.6–1.0 | 0.2–0.5 | 60–90 | `ethereal` `hopeful` `bedroom production` |
+| **Phonk/Driving** | 0.7–0.9 | 0.1–0.4 | 0.6–0.8 | 0.0–0.1 | 0.2–0.5 | 130–160 | `dark` `sample-heavy` `intense throughout` |
+| **Coquette** | 0.2–0.5 | 0.3–0.6 | 0.3–0.5 | 0.4–0.8 | 0.1–0.4 | 70–100 | `dreamlike` `analog warmth` `romantic` |
+| **Party/Club** | 0.8–1.0 | 0.6–0.9 | 0.8–1.0 | 0.0–0.1 | 0.0–0.1 | 120–140 | `polished` `steady groove` `digital` |
+| **Lo-fi Study** | 0.2–0.4 | 0.4–0.6 | 0.5–0.7 | 0.4–0.7 | 0.4–0.7 | 75–95 | `lo-fi` `warm` `sample-heavy` |
+| **Main Character** | 0.5–0.8 | 0.5–0.8 | 0.4–0.6 | 0.2–0.5 | 0.1–0.4 | 90–120 | `cinematic scale` `slow build` `cathartic` |
+| **Old Money/Jazz** | 0.2–0.4 | 0.4–0.7 | 0.4–0.6 | 0.5–0.8 | 0.3–0.7 | 70–120 | `warm` `sparse` `live feel` |
+| **Hyperpop** | 0.8–1.0 | 0.5–0.9 | 0.7–0.9 | 0.0–0.1 | 0.0–0.1 | 140–180 | `noisy` `digital glitch` `maximalist` |
+| **Tokyo Nights** | 0.4–0.7 | 0.5–0.8 | 0.5–0.7 | 0.2–0.5 | 0.2–0.4 | 100–130 | `crystalline` `analog warmth` `dreamlike` |
+| **Istanbul/Arabesk Nights** | 0.2–0.5 | 0.1–0.4 | 0.3–0.5 | 0.5–0.8 | 0.1–0.3 | 65–90 | `warm` `dense` `introspective` |
+| **Berlin Nights (Techno)** | 0.8–1.0 | 0.1–0.4 | 0.7–0.9 | 0.0–0.1 | 0.6–0.9 | 130–150 | `cold` `minimalist` `intense throughout` |
+| **Sapphic/Queer Art Pop** | 0.3–0.6 | 0.3–0.6 | 0.3–0.5 | 0.3–0.7 | 0.1–0.3 | 70–105 | `introspective` `raw` `hopeful` |
+
+> **Araştırma bulgusu (Spotify Engineering):** `valence` + `danceability` kombinasyonu, dinleyici tatminini tahmin etmede en güçlü korelasyonu gösteriyor.
+> **2026 Algoritma notu:** Playlist save sayısı, stream sayısından daha önemli bir sinyal. Listeyi kaydetmeyi teşvik et.
 
 ---
 
