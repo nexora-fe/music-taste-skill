@@ -33,14 +33,21 @@ fi
 
 if [ "$INSTALL_METHOD" = "git" ]; then
   git clone --depth=1 "$REPO.git" "$SKILL_DIR" 2>/dev/null
-  # Remove installer/dev files from cloned copy
-  rm -f "$SKILL_DIR/install.sh" "$SKILL_DIR/README.md"
+  # Remove dev-only files from cloned copy
+  rm -f "$SKILL_DIR/install.sh" "$SKILL_DIR/README.md" "$SKILL_DIR/LICENSE"
+  rm -rf "$SKILL_DIR/.agents" "$SKILL_DIR/skills" "$SKILL_DIR/.gitignore" \
+         "$SKILL_DIR/skills-lock.json" "$SKILL_DIR/extracted" \
+         "$SKILL_DIR/*.zip" "$SKILL_DIR/*.skill"
 else
   # Fallback: download individual files via curl
   mkdir -p "$SKILL_DIR/references"
-  curl -fsSL "$RAW/SKILL.md" -o "$SKILL_DIR/SKILL.md"
-  curl -fsSL "$RAW/references/world-music.md" -o "$SKILL_DIR/references/world-music.md"
-  curl -fsSL "$RAW/references/decades.md" -o "$SKILL_DIR/references/decades.md"
+  curl -fsSL "$RAW/SKILL.md"                              -o "$SKILL_DIR/SKILL.md"
+  curl -fsSL "$RAW/references/world-music.md"             -o "$SKILL_DIR/references/world-music.md"
+  curl -fsSL "$RAW/references/decades.md"                 -o "$SKILL_DIR/references/decades.md"
+  curl -fsSL "$RAW/references/tiktok-aesthetics.md"       -o "$SKILL_DIR/references/tiktok-aesthetics.md"
+  curl -fsSL "$RAW/references/activities.md"              -o "$SKILL_DIR/references/activities.md"
+  curl -fsSL "$RAW/references/languages.md"               -o "$SKILL_DIR/references/languages.md"
+  curl -fsSL "$RAW/references/custom-mix.md"              -o "$SKILL_DIR/references/custom-mix.md"
 fi
 
 echo ""
@@ -48,8 +55,9 @@ echo "✅ $SKILL_NAME installed to $SKILL_DIR"
 echo ""
 echo "   Trigger examples:"
 echo "   • \"sabah koşusu için playlist yap\""
-echo "   • \"yağmurlu akşam için melankoli\""
-echo "   • \"Brezilya tatili vibes\""
-echo "   • \"1970'ler Türkiye nostaljisi\""
+echo "   • \"balkan nights playlist\""
+echo "   • \"bale yaparken çalacak müzik\""
+echo "   • \"arabesk ama modern, gece sürüşü\""
+echo "   • \"villain arc playlist, Türkçe\""
 echo ""
 echo "   Restart Claude Code to activate."
