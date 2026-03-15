@@ -9,7 +9,9 @@ description: >
   "balkan nights", "fairuz nights", "villain arc", "main character", "coquette", "dark academia",
   "cottagecore", "old money", "healing era", "phonk", "sped-up", "y2k vibes", "that girl".
   Kullanıcı herhangi bir duygu durumu, aktivite, ortam, dönem, coğrafya veya TikTok estetiği
-  ile birlikte müzik istediğinde kesinlikle tetikle.
+  ile birlikte müzik istediğinde kesinlikle tetikle. Aktivite kalıpları: "arabada", "koşarken",
+  "bale yaparken", "ders çalışırken", "yemek yaparken", "uyumadan önce", "temizlik yaparken",
+  "spor / gym", "yoga", "date night", "parti öncesi", "road trip", "meditasyon" ve benzerleri.
 ---
 
 # 🎵 Music Taste Skill
@@ -192,6 +194,35 @@ Spotify her parçayı 0–1 arası puanlar. `spotify-api` varken `/recommendatio
 
 ---
 
+## "X Yaparken" — Aktivite Bazlı Müzik
+
+Kullanıcı bir aktivite ile müzik istediğinde → `references/activities.md` dosyasını oku.
+
+### Hızlı Karar Tablosu
+
+| Aktivite Türü | Enstrümantal mı? | BPM Aralığı | Kritik Feature |
+|---------------|-----------------|-------------|----------------|
+| **Ders / Okuma / Derin iş** | EVET — vocal yasak | 70–100 | instrumentalness > 0.6 |
+| **Yoga / Meditasyon / Uyku** | EVET — instrumental tercih | 40–90 | energy < 0.3 |
+| **Bale pratiği** | EVET — enstrümantal şart | parçaya göre | acousticness yüksek |
+| **Koşu / Gym / HIIT** | Hayır — vocal motivasyon verir | 130–180 | energy > 0.8 |
+| **Gece sürüşü / Phonk** | Hayır | 100–155 | valence < 0.5 |
+| **Yemek yapma / Temizlik** | Hayır — söylenebilir | 90–130 | danceability > 0.6 |
+| **Akşam yemeği / Date** | İsteğe bağlı | 75–105 | energy < 0.5 |
+| **Parti / Pregame** | Hayır — vocal şart | 110–145 | danceability > 0.8 |
+| **Road trip** | Hayır — sing-along ideal | 100–130 | valence > 0.6 |
+
+> **Bale / Dans özelliği:** Teknik pratik → klasik/enstrümantal. Serbest dans → contemporary/modern. Performans → programa göre.
+
+### Aktivite Bağlamı Tespiti
+
+"Arabada", "koşarken", "bale yaparken", "ders çalışırken", "yemek yaparken",
+"uyurken", "temizlik yaparken", "spor / gym", "yoga / pilates", "date night",
+"parti öncesi", "road trip", "meditasyon", "resim yaparken", "çizerken" →
+→ `references/activities.md`'nin Türkçe kalıp tablosundan ilgili profile git.
+
+---
+
 ## TikTok & Gen-Z Estetik Vibes
 
 Kullanıcı TikTok dili, estetik terimler veya "[Yer] Nights" formatı kullandığında:
@@ -314,10 +345,25 @@ Yeni ortaya çıkan ve yükselen genre'lar — kullanıcı bu tarzları talep et
 ## Örnekler
 
 **"sabah koşusu için bir şeyler yap"** →
-Tags: `#running` `#energetic` `#uptempo` `#indie-rock` `#electronic` `#120bpm+`
+Tags: `#running` `#energetic` `#uptempo` `#indie-rock` `#electronic` `#120bpm+` — activities.md → Koşu
 
 **"yağmurlu bir akşam için hüzünlü ama güzel"** →
 Tags: `#rainy-day` `#melancholic` `#dreamy` `#slowcore` `#ambient` `#singer-songwriter`
+
+**"bale yaparken çalacak"** →
+Tags: `#ballet` `#classical` `#instrumental` `#practice` — activities.md → Bale → teknik mi, serbest mi sor
+
+**"arabada gece sürüşü"** →
+Tags: `#night-drive` `#synthwave` `#melancholic` `#late-night` — activities.md → Gece Sürüşü
+
+**"ders çalışırken dikkatimi dağıtmasın"** →
+Tags: `#study` `#lo-fi` `#instrumental` `#focus` `#no-vocals` — activities.md → Ders, instrumentalness > 0.7 şart
+
+**"yemek yaparken neşeli bir şey"** →
+Tags: `#cooking` `#feel-good` `#groovy` `#funk` `#upbeat` — activities.md → Yemek Yapma
+
+**"yoga için sakin"** →
+Tags: `#yoga` `#ambient` `#peaceful` `#instrumental` `#very-slow` — activities.md → Yoga, energy < 0.3
 
 **"Brezilya tatili vibes"** →
 Tags: `#bossa-nova` `#tropical` `#samba` `#latin` `#beachside` `#chill` — world-music.md'ye bak
