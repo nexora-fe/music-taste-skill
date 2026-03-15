@@ -1,0 +1,20 @@
+extracted/
+*.zip
+*.skill
+.env
+.DS_Store
+__pycache__/
+
+# AI tool configs (not part of the skill)
+.augment/
+.claude/
+.codebuddy/
+.commandcode/
+.continue/
+.crush/
+.factory/
+.goose/
+.iflow/
+.junie/
+.kilocode/
+.kiro/
