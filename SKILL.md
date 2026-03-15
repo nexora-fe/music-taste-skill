@@ -61,6 +61,60 @@ Endüstri liderleri (Spotify, AllMusic, RateYourMusic, Apple Music) müziği 4 b
 
 ---
 
+## Playlist İsimlendirme
+
+İyi bir playlist adı: **kısa, evocative, biraz belirsiz, kendini açıklamayan.**
+Tanımlamak değil — hissettirmek.
+
+### Formüller (2–4 kelime ideal)
+
+| Formül | İngilizce Örnek | Türkçe Örnek |
+|--------|-----------------|--------------|
+| **Zaman + Duygu** | `3am Drive` · `Golden Hour` · `Sunday Sad` | `Gece 3` · `Altın Saat` · `Pazar Hüznü` |
+| **Mekan + Zaman** | `Paris at Night` · `Tokyo Drive` | `İstanbul Gecesi` · `Sahil Sabahı` |
+| **Sıfat + İsim** | `Quiet Storm` · `Soft Hours` · `Slow Burn` | `Sessiz Fırtına` · `Sakin Saatler` |
+| **Eylem + Bağlam** | `Driving Rain` · `Running Late` | `Yağmurda Sürüş` · `Eve Dönerken` |
+| **Tek Kelime / Kavram** | `Nostalgia` · `Ritual` · `Bloom` · `Closure` | `Hüzün` · `Özlem` · `Geçmiş` |
+| **Lowercase estetik** | `soft launch` · `golden era` · `that feeling` | `yavaş yavaş` · `her şey güzel` |
+| **Moment ismi** | `After the Party` · `Last Train Home` | `Parti Sonrası` · `Son Durak` |
+
+### Gen-Z Dengesi — Ne Kadar?
+
+**✅ Doğal hissettiren (az ama etkili):**
+- `soft hours` · `main character` · `2am thoughts` · `that girl energy` · `slow burn`
+- `no context` · `golden era` · `in my feelings` · `driving nowhere`
+- Türkçe: `yavaş saatler` · `gece yarısı` · `aklımda kalanlar`
+
+**❌ Fazla / Try-hard — kullanma:**
+- `bestie vibes fr fr` · `no cap this slaps` · `understood the assignment queen`
+- `slay the day` · `rizz playlist` · `touch grass` · `based hits`
+- `main character era bestie 💅` · çok emoji · tüm caps
+
+### Dile Göre İsimlendirme
+
+| Playlist Dili | İsimlendirme Stili |
+|---------------|-------------------|
+| **Türkçe ağırlıklı** | Türkçe isim tercih et — `Gece Yolculuğu`, `Hüzünlü Ama Güzel` |
+| **İngilizce / Global** | İngilizce — `Golden Hour`, `Midnight Drive` |
+| **Dil estetiği** (Fransızca vb.) | O dilin kelimesiyle aç — `Nuit de Paris`, `Tokyo 夜` |
+| **Karışık / World** | Evrensel concept — `Late Night Ride`, `Something Like Love` |
+| **Instrumental** | Soyut, mekansal — `The Space Between`, `Still Air`, `Uzak` |
+
+### Aktiviteye Göre Ton
+
+| Aktivite | İsim Tonu | Örnek |
+|----------|-----------|-------|
+| Koşu / Gym | Kısa, güçlü, eylem | `Run the Night` · `Full Send` · `Push` |
+| Ders çalışma | Sade, odak | `Deep Focus` · `Quiet Hours` · `Konsantrasyon` |
+| Gece sürüşü | Sinematik, yalnız | `Midnight Run` · `Neon Miles` · `Gece Yarısı` |
+| Akşam yemeği | Şık, kasıtsız | `Something Nice` · `Good Taste` · `Sofra` |
+| Bale pratiği | Zarif, minimal | `The Studio` · `Warm Up` · `Adagio` |
+| Parti | Enerjik ama cool | `Pre-Game` · `Let's Go` · `Gece Başlıyor` |
+| Uyku | Yumuşak, belirsiz | `Drift` · `Fade Out` · `Uyu` |
+| Romantik | Sıcak ama direct değil | `Slow Dance` · `Something There` · `Sadece Biz` |
+
+---
+
 ## Çıktı Formatı
 
 Her playlist konsepti şu yapıda olmalı:
