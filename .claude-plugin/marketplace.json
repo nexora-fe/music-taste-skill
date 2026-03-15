@@ -1,0 +1,22 @@
+{
+  "name": "music-taste-skill",
+  "owner": {
+    "name": "nexora-fe",
+    "email": ""
+  },
+  "metadata": {
+    "description": "Spotify-style playlist concepts, genre analysis, TikTok aesthetics, activity-based music and mood recommendations — in Turkish",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "music-taste",
+      "description": "Playlist konsepti, genre analizi, TikTok micro-aesthetics, aktivite bazlı müzik önerisi ve Spotify entegrasyonu",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./music-taste"
+      ]
+    }
+  ]
+}
