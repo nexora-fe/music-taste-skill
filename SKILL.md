@@ -30,30 +30,34 @@ Endüstri liderleri (Spotify, AllMusic, RateYourMusic, Apple Music) müziği 4 b
 | **Mood / Duygu** (Spotify valence-energy matrisi) | Nasıl hissettirmeli? | "Melancholic ama hopeful", "Dark ve intense" |
 | **Theme / Aktivite** (AllMusic Theme axis) | Nerede, ne yaparken dinlenecek? | "Late night driving", "Study", "Dinner party" |
 | **Descriptor / Tekstür** (RateYourMusic yaklaşımı) | Ses nasıl? Atmosfer nedir? | "Sparse, ethereal, lo-fi", "Dense, wall-of-sound" |
+| **Dil / Language** | Hangi dilde olsun? | "Türkçe", "yabancı", "Fransızca", "karışık", "instrumental" |
 
 **Çalışma sırası:**
-1. 4 ekseni isteğe göre doldur — eksik eksenler varsa sor
-2. Genre + Mood + Theme kombinasyonundan Spotify tag'leri üret
-3. Descriptor katmanıyla "Vibe" açıklamasını zenginleştir
-4. Gerekirse dünya müziği / dönem / TikTok referanslarına başvur
+1. 5 ekseni isteğe göre doldur — eksik eksenler varsa sor
+2. **Dil filtresi** önce uygula — aktivite ders/okuma/meditasyon ise instrumental otomatik (bkz. `references/languages.md`)
+3. Genre + Mood + Theme kombinasyonundan Spotify tag'leri üret
+4. Descriptor katmanıyla "Vibe" açıklamasını zenginleştir
+5. Gerekirse dünya müziği / dönem / TikTok referanslarına başvur
 
 ---
 
 ## Kişiselleştirme
 
-İstek belirsiz veya eksik eksen içeriyorsa, direkt playlist üretmeden önce **3 kısa soru** sor:
+İstek belirsiz veya eksik eksen içeriyorsa, direkt playlist üretmeden önce **en fazla 3 kısa soru** sor:
 
 1. **Favori sanatçı / referans**: "Bu listeye yakın bir sanatçı veya şarkı var mı?"
-2. **Kaçınılacak genre**: "Kesinlikle istemediğin bir tarz var mı?" (örn. metal, rap, klasik)
+2. **Dil tercihi**: "Türkçe mi, yabancı mı, karışık mı olsun?" ← yeni — çok kritik
 3. **Enerji seviyesi**: "Sakin mi, orta mı, yoksa enerjik mi olsun?"
 
-**Soruları atla ve direkt üret** eğer istek zaten şu 3 ekseni de içeriyorsa:
-- Mood / duygu (örn. "hüzünlü", "enerjik", "sakin")
-- Bağlam / aktivite (örn. "koşu", "çalışma", "akşam yemeği")
-- Estetik / dönem (örn. "80'ler", "vintage", "elektronik")
+> **Dil sorusunu atla** eğer: genre zaten dili belirtiyorsa (arabesk → Türkçe, K-pop → Korece),
+> aktivite instrumental gerektiriyorsa (ders, okuma, bale, meditasyon), veya kullanıcı açıkça belirtmişse.
 
-Örnek: "sabah koşusu için enerjik indie rock" → 3 eksen tamam, direkt üret.
-Örnek: "güzel bir şeyler istiyorum" → belirsiz, soruları sor.
+**Soruları atla ve direkt üret** eğer istek şu 5 ekseni de içeriyorsa:
+- Mood / duygu · Bağlam / aktivite · Estetik / dönem · **Dil** · Genre (veya referans sanatçı)
+
+Örnek: "sabah koşusu için enerjik indie rock" → dil (İngilizce anlaşılıyor), eksenler tamam, direkt üret.
+Örnek: "güzel bir şeyler istiyorum" → 4 eksen eksik, soruları sor.
+Örnek: "Türkçe, hüzünlü, gece" → dil belirli, 2 eksen eksik → enerji + genre sor.
 
 ---
 
@@ -66,7 +70,7 @@ Her playlist konsepti şu yapıda olmalı:
 📝 [1-2 cümle konsept açıklaması]
 
 🏷️ SPOTIFY TAGS
-#[genre] #[subgenre] #[mood] #[aktivite] #[dönem/estetik] #[tempo/enerji]
+#[genre] #[subgenre] #[mood] #[aktivite] #[dönem/estetik] #[tempo/enerji] #[dil: turkish/english/instrumental/multilingual/...]
 
 🌍 VIBE
 [2-3 cümle: ses paleti, enstrümanlar, atmosfer]
@@ -262,6 +266,49 @@ Her on yılın hızlı etiketi — detaylar için `references/decades.md`:
 | **2020s** | post-internet, ambient pop, drill, neo-soul revival, digicore |
 
 > **Türkiye'ye özgü dönem notları** (Anadolu Rock, Arabesk, Özgün müzik, 2000'ler pop patlaması) `references/decades.md`'de ayrı bölüm olarak yer alıyor.
+
+---
+
+## Dil Filtresi
+
+Dil, playlist kalitesi için kritik bir eksen. Detaylı harita: `references/languages.md`
+
+### Hızlı Karar Ağacı
+
+```
+Kullanıcı dil belirtti mi?
+├── "Türkçe" → Mono-Türkçe (arabesk, türkü, Türk pop, Türk trap)
+├── "Yabancı" → Sor: "İngilizce mi, yoksa herhangi bir dil mi?"
+├── "Fransızca / Japonca / Arapça..." → Dil estetiği → languages.md
+├── "Karışık / fark etmez" → Global mod
+└── Belirtmedi → Context'e bak:
+    ├── Aktivite = ders / okuma / bale / meditasyon → Instrumental (dil yok)
+    ├── Genre zaten dil içeriyor (arabesk, türkü, K-pop) → O dili uygula
+    ├── [Place] Nights → O yerin dili estetiği
+    └── Diğer → Global (İngilizce ağırlıklı)
+```
+
+### Genre → Dil Özeti
+
+| Dil | Genre'lar |
+|-----|-----------|
+| 🇹🇷 **Türkçe** | Arabesk, Türkü, Anadolu Rock, Türk Pop, Türk Trap/Drill, Özgün müzik |
+| 🇺🇸🇬🇧 **İngilizce** | Pop, Rock, Metal, Hip-Hop (US/UK), R&B, Indie, Electronic |
+| 🎵 **Instrumental** | Klasik, Ambient, Techno, Post-rock, Jazz (büyük kısmı), Neoclassical |
+| 🇰🇷 **Korece** | K-pop (+ İngilizce kelimeler karışık) |
+| 🇯🇵 **Japonca** | J-pop, City Pop |
+| 🇪🇸 **İspanyolca** | Reggaeton, Cumbia, Flamenco, Latin pop |
+| 🇧🇷🇵🇹 **Portekizce** | Bossa Nova, Sertanejo, Fado |
+| 🇦🇪 **Arapça** | Klasik Arap, Mahraganat, Fairuz estetiği |
+| 🇫🇷 **Fransızca** | Chanson, French rap (PNL), French electronic |
+| 🌍 **Multi-language** | Afrobeats (İngilizce+Yoruba), Amapiano, WorldPop |
+
+### "Dil Estetiği" Özel Durumu
+
+Kullanıcı anlamasa da o dilin *sesini ve hissini* isteyebilir:
+- "Fransızca şarkılar çok şık" → Chanson / variété française → languages.md → Dil Estetiği tablosu
+- "Japonca nostaljik hissettiriyor" → City Pop / J-pop → languages.md → Dil Estetiği tablosu
+- "Arapça, Fairuz gibi" → Klasik Arap müziği → world-music.md + languages.md
 
 ---
 
