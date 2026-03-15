@@ -201,3 +201,10 @@ Bölgesel genre'lar, alt türler, karakteristik özellikler ve Spotify tag öner
 | "Brezilya ülke müziği" | Sertanejo: Marilia Mendonça, Jorge & Mateus |
 | "Afrika geleceği, futuristik" | Afrofuturism: Mdou Moctar, Ebo Krdum |
 | "2020s Japonya pop" | J-Pop modern: YOASOBI, Official HIGE DANdism |
+| **"[Yer] Nights" formatı** | → tiktok-aesthetics.md'nin "[Place] Nights" haritasına git |
+| "Fairuz nights" | Fairuz, Ziad Rahbani, Marcel Khalife → Lübnan klasik |
+| "Istanbul nights" | Sezen Aksu, Müslüm Gürses, Hüsnü Şenlendirici → Arabesk/Turkish pop |
+| "Cairo nights" | Umm Kulthum, Abdel Halim Hafez → Mısır klasik |
+| "Athens nights" | Haris Alexiou, Nikos Papazoglou → Rebetiko/Laiko |
+| "Tehran nights" | Shajarian, Googoosh → İran klasik/pop |
+| "Buenos Aires nights" | Astor Piazzolla, Carlos Gardel → Tango |

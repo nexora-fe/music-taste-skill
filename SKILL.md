@@ -5,8 +5,11 @@ description: >
   Spotify-style tag listesi talep ettiğinde bu skili kullan. Tetikleyici ifadeler: "playlist yap",
   "müzik öner", "şarkı listesi", "dinleme listesi", "bu mood için müzik", "road trip müziği",
   "çalışma müziği", "sabah playlist", "genre nedir", "Spotify tag", "bu sanatçıya benzer",
-  "vibes", "atmosfer için müzik", "akşam müziği". Kullanıcı herhangi bir duygu durumu, aktivite,
-  ortam, dönem veya coğrafya ile birlikte müzik istediğinde kesinlikle tetikle.
+  "vibes", "atmosfer için müzik", "akşam müziği". Ayrıca TikTok/Gen-Z estetik terimleri:
+  "balkan nights", "fairuz nights", "villain arc", "main character", "coquette", "dark academia",
+  "cottagecore", "old money", "healing era", "phonk", "sped-up", "y2k vibes", "that girl".
+  Kullanıcı herhangi bir duygu durumu, aktivite, ortam, dönem, coğrafya veya TikTok estetiği
+  ile birlikte müzik istediğinde kesinlikle tetikle.
 ---
 
 # 🎵 Music Taste Skill
@@ -77,45 +80,86 @@ Her playlist konsepti şu yapıda olmalı:
 
 ---
 
-## Spotify Genre & Tag Sistemi — Temel Referans
+## Spotify Genre & Tag Sistemi — Kapsamlı Referans
 
-### Ana Genre Kümeleri
+### Ana Genre Kümeleri (Tam Liste)
 
-| Küme | Örnekler |
-|------|----------|
-| **Electronic** | ambient, techno, house, lo-fi, synthwave, chillwave, hyperpop |
-| **Rock** | indie rock, shoegaze, post-rock, math rock, grunge, emo |
-| **Hip-Hop / R&B** | boom bap, trap, neo soul, alternative r&b, conscious rap |
-| **Folk / Acoustic** | folk, singer-songwriter, chamber folk, Americana, freak folk |
-| **Jazz** | bebop, modal jazz, nu jazz, jazz fusion, acid jazz |
-| **Classical / Neoclassical** | baroque, minimalism, contemporary classical, cinematic |
-| **World / Global** | afrobeat, latin, fado, bossa nova, flamenco, cumbia → detay için `references/world-music.md` |
-| **Pop** | dream pop, synth-pop, art pop, bedroom pop, indie pop |
-| **Metal** | doom metal, black metal, post-metal, math metal |
-| **Experimental** | noise, avant-garde, musique concrète, glitch |
+| Küme | Alt Türler |
+|------|-----------|
+| **Electronic** | ambient, drone, dark ambient · techno, industrial techno · house (deep, tech, progressive, afro) · lo-fi hip-hop · synthwave, retrowave, chillwave · hyperpop · drum & bass, jungle · UK garage, grime · dubstep, future bass · IDM, glitch, EBM · trance, psytrance · hardstyle · phonk, Memphis rap · jersey club, footwork |
+| **Rock** | indie rock, alternative rock · shoegaze, dream pop · post-rock · math rock · grunge, seattle sound · emo, pop-punk · punk, hardcore, post-hardcore · metalcore, deathcore · psychedelic rock, stoner rock · prog rock · classic rock · glam rock · new wave, post-punk · surf rock |
+| **Metal** | doom, sludge · black metal · death metal · thrash · power metal · folk metal, viking metal · symphonic metal · progressive metal · nu-metal · post-metal · math metal |
+| **Hip-Hop / Rap** | boom bap, East Coast · trap, Atlanta · drill (UK, Chicago, NY) · conscious rap, art rap · gangsta, West Coast · lo-fi hip-hop · cloud rap, emo rap · phonk · pluggnb · turntablism |
+| **R&B / Soul** | neo soul · alternative R&B · classic soul, Motown soul · funk · gospel · blues · rhythm & blues · indie R&B · afro R&B |
+| **Folk / Acoustic** | folk, singer-songwriter · chamber folk · Americana, roots · bluegrass · freak folk · Celtic, Irish folk · country folk · acoustic pop |
+| **Country** | classic country · outlaw country · country pop · alt-country, Americana · bro-country · country rap |
+| **Jazz** | bebop · cool jazz · hard bop · modal jazz · free jazz · jazz fusion · acid jazz · nu jazz · jazz hop · smooth jazz · Bossa Nova (bkz. World) |
+| **Classical / Orchestral** | baroque · classical · romantic · contemporary classical · minimalism (Glass, Reich) · neoclassical · film score, cinematic · ambient classical |
+| **Pop** | dream pop · synth-pop · art pop · bedroom pop · indie pop · hyperpop · power pop · bubblegum pop · sophisti-pop · electropop · K-pop · J-pop (bkz. World) |
+| **Reggae / Dancehall** | roots reggae · dancehall · ska · dub · reggaeton (bkz. World/Latin) |
+| **Experimental** | noise · avant-garde · musique concrète · drone · harsh noise · lowercase · plunderphonics · spoken word |
+| **World / Global** | Afrobeat, Amapiano, Highlife · Latin (cumbia, salsa, tango, sertanejo) · MENA (Arap klasik, mahraganat, fado) · Türk (türkü, arabesk, Anadolu rock, Türk trap) · Asya (J-pop, City pop, K-pop, Bollywood) · Balkan brass → detay: `references/world-music.md` |
 
 ### Mood Tag'leri (Spotify'da yaygın)
 
 **Enerji Ekseninde:**
-`#energetic` `#chill` `#melancholic` `#uplifting` `#dark` `#peaceful` `#intense` `#dreamy`
+`#energetic` `#chill` `#melancholic` `#uplifting` `#dark` `#peaceful` `#intense` `#dreamy` `#euphoric` `#angry` `#romantic` `#bittersweet`
 
 **Aktivite Ekseninde:**
-`#workout` `#study` `#sleep` `#commute` `#party` `#focus` `#road-trip` `#dinner`
+`#workout` `#study` `#sleep` `#commute` `#party` `#focus` `#road-trip` `#dinner` `#morning-routine` `#late-night` `#running` `#meditation` `#pregame`
 
 **Estetik Ekseninde:**
-`#cottagecore` `#cyberpunk` `#vintage` `#cinematic` `#lo-fi` `#vaporwave` `#dark-academia`
+`#cottagecore` `#cyberpunk` `#vintage` `#cinematic` `#lo-fi` `#vaporwave` `#dark-academia` `#coquette` `#villain-arc` `#main-character` `#old-money` `#coastal` `#hyperpop-baddie`
+
+### Spotify Audio Features — Playlist Hedefleri
+
+Spotify her parçayı 0–1 arası puanlar. `spotify-api` varken `/recommendations` çağrısında bunları kullan:
+
+| Audio Feature | Düşük (0.0–0.3) | Orta (0.4–0.6) | Yüksek (0.7–1.0) |
+|---------------|-----------------|----------------|------------------|
+| **Energy** | Ambient, drone, klasik | Indie pop, lo-fi, folk | Techno, metal, trap |
+| **Valence** (mutluluk) | Dark, sad, melancholic | Bittersweet, chill | Happy, party, uplifting |
+| **Danceability** | Drone, classical, folk | Indie rock, R&B | House, reggaeton, afrobeats |
+| **Acousticness** | Electronic, metal | Indie rock, lo-fi | Folk, classical, arabesk |
+| **Instrumentalness** | Rap, pop, vocal | Trip-hop, ambient pop | Techno, classical, jazz |
+
+> **Spotify Playlist Akışı:** Açılış → mood set et (orta enerji) → zirve (%40-60 arası) → kapanış (enerji düşür).
+> `spotify-api` kullanıyorsan `target_energy`, `target_valence`, `target_danceability`, `target_tempo` parametrelerini `/recommendations` endpoint'ine geçir.
 
 ### Tempo / Enerji Tag'leri — BPM Rehberi
 
 | BPM Aralığı | Tag | Örnek Genre | Hissettirdiği |
 |-------------|-----|-------------|---------------|
 | 0–60 | `#very-slow` | Ambient, Drone, Dark Folk | Meditasyon, uyku, ağır melankolik |
-| 60–90 | `#slow-burn` | Lo-fi, Soul, Bossa Nova | Sakin odak, kahve molası, gece sonu |
-| 90–110 | `#mid-tempo` | Indie Pop, R&B, Acoustic | Gündelik akış, öğleden sonra |
-| 110–130 | `#uptempo` | House, Indie Rock, Synth-pop | Dans, yürüyüş, motivasyon |
-| 130+ | `#high-energy` | Techno, Drum & Bass, Metal | Antrenman, rave, yoğun odak |
+| 60–90 | `#slow-burn` | Lo-fi, Soul, Bossa Nova, Arabesk | Sakin odak, kahve molası, gece sonu |
+| 90–110 | `#mid-tempo` | Indie Pop, R&B, Acoustic, City Pop | Gündelik akış, öğleden sonra |
+| 110–130 | `#uptempo` | House, Indie Rock, Synth-pop, K-pop | Dans, yürüyüş, motivasyon |
+| 130–160 | `#high-energy` | Techno, Drum & Bass, Phonk, Hardstyle | Antrenman, rave, sürüş |
+| 160+ | `#extreme` | Hardcore, Speedcore, Hyperpop (sped-up) | Ekstrem yoğunluk, mosh pit |
 
-> **Not:** spotify-api skili mevcutsa, bir parçanın tam BPM'ini `tempo` audio feature ile doğrulayabilirsin.
+---
+
+## TikTok & Gen-Z Estetik Vibes
+
+Kullanıcı TikTok dili, estetik terimler veya "[Yer] Nights" formatı kullandığında:
+→ `references/tiktok-aesthetics.md` dosyasını oku ve o bölümü uygula.
+
+### "[Place] Nights" Format Tespiti
+
+Bu kalıplardan biri varsa → tiktok-aesthetics.md'nin "[Place] Nights" haritasına git:
+> "Balkan nights", "fairuz nights", "istanbul nights", "paris nights", "rome nights", "tokyo nights",
+> "cairo nights", "athens nights", "berlin nights", "lisbon nights", "havana nights" vb.
+
+### Gen-Z Estetik Tespiti
+
+Bu kelimelerden biri varsa → tiktok-aesthetics.md'nin "Estetik Dili" tablosuna git:
+> villain arc, main character, healing era, coquette, dark academia, cottagecore, mob wife,
+> quiet luxury, old money, coastal grandmother, barbiecore, hot girl summer, that girl,
+> clean girl, glow up, rizz, delulu, soft launch, hyperpop baddie, sapphic vibes
+
+### TikTok Viral Sesleri
+
+> phonk, sped-up, slowed reverb, trending sound, tiktok made me listen, y2k, 90s teen movie
 
 ---
 
@@ -173,11 +217,12 @@ Bu ifadelerden biri geldiğinde şu akışı uygula:
 ### Akış
 
 1. **Konsept oluştur** — önce tam playlist konseptini (yukarıdaki format) üret
-2. **spotify-api skilini devreye al** — `spotify-api` skill'ini çağır
-3. **Playlist yarat** — konsept adı ve açıklamasıyla boş playlist oluştur
-4. **Track ara** — önerilen şarkıları tek tek `search` ile bul, Spotify URI'lerini topla
-5. **Ekle** — bulunan track'leri playlist'e ekle
-6. **Kapak sanatı** (isteğe bağlı) — spotify-api'nin SVG kapak özelliğini kullanabilirsin
+2. **Audio features hedefle** — genre/estetikten `tiktok-aesthetics.md` audio features tablosunu kullanarak `target_energy`, `target_valence`, `target_danceability`, `target_tempo` değerlerini belirle
+3. **spotify-api skilini devreye al** — `spotify-api` skill'ini çağır
+4. **Playlist yarat** — konsept adı ve açıklamasıyla boş playlist oluştur
+5. **Track ara** — önerilen şarkıları `search` ile bul **VEYA** `/recommendations` endpoint'ine audio features + seed artists/genres geçerek Spotify'ın kendi öneri motorunu kullan
+6. **Ekle** — bulunan track'leri playlist'e ekle; akışı aç → zirve → kapat şeklinde sırala
+7. **Kapak sanatı** (isteğe bağlı) — spotify-api'nin SVG kapak özelliğini kullanabilirsin
 
 ### Hata Toleransı
 
@@ -229,3 +274,18 @@ Tags: `#turkish-folk` `#anatolian-rock` `#vintage` `#türkü` `#psychedelic` —
 
 **"80'ler synthpop akşam"** →
 Tags: `#synth-pop` `#new-wave` `#80s` `#nostalgic` `#evening` `#mid-tempo` — decades.md'ye bak
+
+**"Fairuz Nights playlist"** →
+Tags: `#arabic` `#lebanese` `#nostalgic` `#classical` `#late-night` `#acoustic` — tiktok-aesthetics.md → "[Place] Nights"
+
+**"Villain arc playlist yap"** →
+Tags: `#dark` `#intense` `#cinematic` `#empowering` `#villain-arc` — tiktok-aesthetics.md → Gen-Z Estetik Dili
+
+**"Cottagecore sabah"** →
+Tags: `#cottagecore` `#folk` `#acoustic` `#nature` `#morning` `#peaceful` — tiktok-aesthetics.md → Gen-Z Estetik Dili
+
+**"Phonk sürüş gecesi"** →
+Tags: `#phonk` `#dark-trap` `#driving` `#late-night` `#aggressive` — 2025-2026 Trend Radar + tiktok-aesthetics.md
+
+**"Balkan nights party"** →
+Tags: `#balkan` `#brass` `#dance` `#energetic` `#folk` `#late-night` — tiktok-aesthetics.md → "[Place] Nights" + world-music.md
