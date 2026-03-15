@@ -4,11 +4,11 @@
 
 set -e
 
-SKILL_NAME="music-taste-skill"
+SKILL_NAME="music-taste"
 SKILLS_DIR="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}"
 SKILL_DIR="$SKILLS_DIR/$SKILL_NAME"
 REPO="https://github.com/nexora-fe/music-taste-skill"
-RAW="https://raw.githubusercontent.com/nexora-fe/music-taste-skill/main"
+RAW="https://raw.githubusercontent.com/nexora-fe/music-taste-skill/main/music-taste"
 
 echo "🎵 Installing $SKILL_NAME..."
 
@@ -32,12 +32,10 @@ if [ -d "$SKILL_DIR" ]; then
 fi
 
 if [ "$INSTALL_METHOD" = "git" ]; then
-  git clone --depth=1 "$REPO.git" "$SKILL_DIR" 2>/dev/null
-  # Remove dev-only files from cloned copy
-  rm -f "$SKILL_DIR/install.sh" "$SKILL_DIR/README.md" "$SKILL_DIR/LICENSE"
-  rm -rf "$SKILL_DIR/.agents" "$SKILL_DIR/skills" "$SKILL_DIR/.gitignore" \
-         "$SKILL_DIR/skills-lock.json" "$SKILL_DIR/extracted" \
-         "$SKILL_DIR/*.zip" "$SKILL_DIR/*.skill"
+  TMP_DIR="$(mktemp -d)"
+  git clone --depth=1 "$REPO.git" "$TMP_DIR" 2>/dev/null
+  mv "$TMP_DIR/music-taste" "$SKILL_DIR"
+  rm -rf "$TMP_DIR"
 else
   # Fallback: download individual files via curl
   mkdir -p "$SKILL_DIR/references"
