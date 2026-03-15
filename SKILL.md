@@ -100,6 +100,106 @@ Tanımlamak değil — hissettirmek.
 | **Karışık / World** | Evrensel concept — `Late Night Ride`, `Something Like Love` |
 | **Instrumental** | Soyut, mekansal — `The Space Between`, `Still Air`, `Uzak` |
 
+### Havalı Kelimeler & Kavramlar — Borrowed Vocabulary
+
+Başka dillerden alınmış, kendi başına playlist ismi olabilen ya da isme eklenince derinlik katan kelimeler.
+Bunlar **anlamını bilen de bilmeyen de güzel hisseder** — o yüzden çalışıyor.
+
+**Latince — Evergreen cool:**
+| Kelime | Anlam | Playlist Örneği |
+|--------|-------|-----------------|
+| `Vice Versa` | Tam tersi, tersine | `Vice Versa Nights` |
+| `Alter Ego` | İkinci benlik | `Alter Ego` · `alter ego hours` |
+| `Carpe Noctem` | Geceyi yakala (carpe diem'in gecesi) | `Carpe Noctem` |
+| `Memento Mori` | Ölümlü olduğunu unutma | `Memento Mori` |
+| `In Memoriam` | Anısına | `In Memoriam` |
+| `Tempus Fugit` | Zaman uçar | `Tempus Fugit` |
+| `Mea Culpa` | Benim hatam | `mea culpa` |
+| `Bona Fide` | Gerçek, sahici | `Bona Fide Soul` |
+| `Status Quo` | Mevcut durum | `Break the Status Quo` |
+| `Per Se` | Kendi başına | `Not Sad Per Se` |
+
+**Fransızca — Şıklık ve melankoli:**
+| Kelime | Anlam | Playlist Örneği |
+|--------|-------|-----------------|
+| `C'est La Vie` | İşte hayat | `C'est La Vie` |
+| `Je Ne Sais Quoi` | Tarifi zor bir şey | `je ne sais quoi` |
+| `Carte Blanche` | Tam özgürlük | `Carte Blanche` |
+| `Déjà Vu` | Zaten yaşanmış his | `Déjà Vu Drive` |
+| `Joie de Vivre` | Yaşama sevinci | `Joie de Vivre` |
+| `Raison d'Être` | Var olma sebebi | `Raison d'Être` |
+| `Fin de Siècle` | Yüzyıl sonu / çöküş estetiği | `Fin de Siècle` |
+| `Entre Nous` | Aramızda kalsın | `entre nous` |
+| `Coup de Grâce` | Son darbe | `Coup de Grâce` |
+| `Mal du Pays` | Yurt özlemi / gurbet | `Mal du Pays` |
+| `Au Revoir` | Elveda | `Au Revoir` · `au revoir, summer` |
+| `Enfant Terrible` | Korkunç çocuk | `enfant terrible` |
+
+**İtalyanca — Dolce vita ve müzik terimleri:**
+| Kelime | Anlam | Playlist Örneği |
+|--------|-------|-----------------|
+| `Dolce Vita` | Tatlı hayat | `Dolce Vita` · `dolce vita summer` |
+| `Sprezzatura` | Zahmetsiz zarafet (Rönesans kavramı) | `Sprezzatura` |
+| `Bella Figura` | Güzel görünüş / izlenim | `Bella Figura` |
+| `Duende` | İspanyolca ama İtalyan da kullanır — ruhun derinliğinden gelen büyü | `Duende` |
+| `Crescendo` | Giderek yükselen | `Crescendo` · `slow crescendo` |
+| `Adagio` | Yavaş, sakin (müzik terimi) | `Adagio` · `adagio for one` |
+| `Forte` | Güçlü (müzik terimi) | `Forte` |
+| `Incognito` | Kimliğini gizleyerek | `incognito mode` |
+
+**Almanca — Derin ve kavramsal:**
+| Kelime | Anlam | Playlist Örneği |
+|--------|-------|-----------------|
+| `Wanderlust` | Yolculuk özlemi | `Wanderlust` · `wanderlust drive` |
+| `Weltschmerz` | Dünya acısı, varoluşsal hüzün | `Weltschmerz` · `weltschmerz sundays` |
+| `Sehnsucht` | Derin özlem, içsel yoksunluk | `Sehnsucht` |
+| `Fernweh` | Uzak yerlere özlem | `Fernweh` |
+| `Zeitgeist` | Dönemin ruhu | `Zeitgeist` |
+| `Angst` | Varoluşsal kaygı | `angst` · `late night angst` |
+| `Gestalt` | Bütün, tüm tablo | `Gestalt` |
+
+**Japonca — Estetik ve wabi-sabi:**
+| Kelime | Anlam | Playlist Örneği |
+|--------|-------|-----------------|
+| `Wabi-Sabi` | Kusurlu güzellik | `wabi-sabi` |
+| `Mono no Aware` | Geçiciliğin hüznü | `mono no aware` |
+| `Komorebi` | Yapraklar arasından süzülen güneş ışığı | `Komorebi` |
+| `Yugen` | Derin, gizemli evren güzelliği | `Yugen` |
+| `Ma` | Boşluk, sessizlik arası | `Ma` |
+| `Natsukashii` | Nostaljik özlem (isim hali: natsukashisa) | `natsukashii` |
+| `Ikigai` | Var olma sebebi, yaşam amacı | `Ikigai` |
+
+**Portekizce & İspanyolca:**
+| Kelime | Anlam | Playlist Örneği |
+|--------|-------|-----------------|
+| `Saudade` | Geçmişe özlem, hiç olmayan için de özlem | `Saudade` · `saudade nights` |
+| `Querencia` | Güvende hissettiğin yer | `Querencia` |
+| `Duende` | Flamenkodaki ruhsal büyü, derinlik | `Duende` |
+| `Mañana` | Yarın (erteleme estetiği de var) | `mañana` |
+
+**Türkçe — Kendi dilimizin gizli güzellikleri:**
+| Kelime | Anlam | Playlist Örneği |
+|--------|-------|-----------------|
+| `Hüzün` | Melankolik özlem (Orhan Pamuk İstanbul estetiği) | `Hüzün` · `Hüzün Saatleri` |
+| `Hasret` | Derin özlem | `Hasret` |
+| `Gurbet` | Yurdundan uzak olmak | `Gurbet` · `gurbet geceleri` |
+| `Merak` | Merak, curiosity | `Merak` |
+| `Sükût` | Derin sessizlik | `Sükût` |
+| `Muhabbet` | Sohbet, samimi konuşma | `Muhabbet` |
+| `Huzur` | Huzur, iç barış | `Huzur` |
+
+### Kelime Kombinasyonu — Formüle Uygula
+
+Borrowed kelime + formül = güçlü isim:
+
+> `Weltschmerz Sundays` · `vice versa nights` · `saudade drive` · `carpe noctem` · `alter ego hours`
+> `dolce vita summer` · `wabi-sabi morning` · `fernweh road trip` · `c'est la vie` · `je ne sais quoi`
+> `komorebi` · `sehnsucht` · `hüzün saatleri` · `gurbet geceleri` · `carte blanche`
+
+**Kural:** Tek başına durabilen kelimeler en güçlü isimler olur. `Saudade` — açıklama gerektirmez.
+
+---
+
 ### Aktiviteye Göre Ton
 
 | Aktivite | İsim Tonu | Örnek |
