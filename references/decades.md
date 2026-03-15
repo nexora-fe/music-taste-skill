@@ -161,11 +161,16 @@ Sanatçılar: Ezhel, Murda, Sagopa Kajmer (devam), Ben Fero, Khontkar.
 | **Drill** | UK ve Chicago drill'in globalleşmesi | Central Cee, Pop Smoke, Headie One |
 | **Folktronica** | Akustik enstrümanlar + elektronik doku | Bon Iver (devam), Phoebe Bridgers, Big Thief |
 | **Afrobeats Global** | Lagos sound'un dünya çapında yayılması | Burna Boy, Wizkid, Tems, Rema |
+| **PluggnB** | Dreamy plugg trap + 90s R&B füzyonu; melankolik ama dans edilebilir | Summrs, SoFaygo, Yeat (erken) |
+| **Afrofuturism** | Afrika geleneksel enstrümanları + futuristik elektronik; kimlik yüklü estetik | Mdou Moctar, Ebo Krdum, Burna Boy |
+| **Nu-Metal Revival** | Deftones/Korn/SOAD TikTok yeniden keşfi; yeni kuşak ağır ses | Spiritbox, Bad Omens, Knocked Loose |
+| **WorldPop** | Latin + Afrobeats + EDM Gen-Z cross-kültürel füzyonu | Peso Pluma + Burna Boy collabs, Rema |
 
-**Spotify Tags:** `#2020s` `#neo-soul` `#ambient-pop` `#drill` `#folktronica` `#afrobeats` `#post-internet`
+**Spotify Tags:** `#2020s` `#neo-soul` `#ambient-pop` `#drill` `#folktronica` `#afrobeats` `#post-internet` `#pluggnb` `#afrofuturism` `#nu-metal-revival` `#worldpop`
 
-**Türkiye Notu:** R&B ve soul etkisinde yeni nesil Türkçe pop.
-Sanatçılar: Jabbar, Rauf & Faik (Türk dinleyicisi), Zeynep Bastık (yeni nesil pop).
+**Türkiye Notu:** Türk rap sahnesi 2025'te zirveye ulaştı: BLOK3 Spotify Türkiye'nin en çok dinleneni oldu.
+Top 100'ün %98'i Türkçe içerik. Sezen Aksu en çok dinlenen kadın sanatçı unvanını korudu.
+Sanatçılar: BLOK3, Ati242, Lvbel C5, Era7capone (trap/drill); Jabbar, Zeynep Bastık (yeni nesil pop).
 
 ---
 
@@ -197,3 +202,7 @@ Kullanıcı birden fazla dönem referans verdiğinde ya da "zamansız" bir his i
 | "80'ler Japonya" | 80s | City Pop |
 | "TikTok vibes" | 2020s | Bedroom pop, hyperpop, digicore |
 | "Akşam yemeği, şık" | 60s/70s | Bossa nova, jazz, soul |
+| "PluggnB tarzı" | 2020s | PluggnB, dreamy trap, R&B |
+| "Nu-metal ama güncel" | 2020s | Nu-Metal Revival, Spiritbox, Bad Omens |
+| "Afrika + elektronik + futuristik" | 2020s | Afrofuturism, African Electronic |
+| "Türk trap, Türkçe rap 2025" | 2020s | Türk Trap/Drill, BLOK3, Ati242 |

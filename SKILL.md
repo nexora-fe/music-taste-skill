@@ -144,6 +144,26 @@ Kullanıcı bölgesel/kültürel müzik istediğinde (Afrika, Latin Amerika, Ort
 
 ---
 
+## Kültürel Müzik Kimliği
+
+Kullanıcı "Türk", "Japon", "Brezilyalı", "Koreli" gibi kültürel referanslar verdiğinde bu tabloyu uygula.
+Ülkenin 2025 dominant sesini, kültürel kimlik sinyallerini ve daha derin araştırma için referansı belirtir.
+
+| Ülke/Kültür | Dominant Genre 2025 | Kültürel Kimlik İpuçları | Referans |
+|-------------|---------------------|--------------------------|----------|
+| **Türkiye** | Türk Trap / Drill | Top 100'ün %98'i Türkçe; BLOK3, Ati242, Lvbel C5 zirve; Sezen Aksu en çok dinlenen kadın | world-music.md → Türkiye & Balkanlar |
+| **Japonya** | J-Pop / City Pop revival | YOASOBI, Official HIGE DANdism dominant; nostaljik City Pop yeniden keşfi devam ediyor | world-music.md → Güney & Doğu Asya |
+| **Nijerya** | Afrobeats global | Burna Boy, Wizkid, Tems dünya sahnesi; Amapiano etkisi artıyor | world-music.md → Afrika |
+| **Brezilya** | Sertanejo + Funk Carioca | En büyük yerli genre sertanejo; funk carioca kent kültürü | world-music.md → Latin Amerika |
+| **G. Kore** | K-Pop + K-indie | K-pop %51 yerli pay; idol sistemi + bağımsız sahne ikili yapısı | world-music.md → Güney & Doğu Asya |
+| **ABD** | Hip-Hop + Country | Hip-Hop %30.7, Rock +%29 artış, Country +%20; TikTok cross-genre keşifleri | decades.md → 2020s |
+| **Almanya** | Techno + Schlager | Berlin techno sahnesi küresel; geleneksel Schlager hâlâ iç piyasada güçlü | world-music.md → Avrupa |
+| **Hindistan** | Bollywood Pop + Indie | AR Rahman etkisi; yeni nesil Hindustani füzyon ve desi hip-hop yükseliyor | world-music.md → Güney & Doğu Asya |
+
+> Daha derin bölgesel bağlam için her zaman `references/world-music.md` dosyasını oku.
+
+---
+
 ## Spotify Entegrasyonu
 
 **Tetikleyici ifadeler:** "Spotify'a ekle", "gerçekten oluştur", "playlistimi yap", "Spotify'da yap", "direkt ekle", "hesabıma ekle"
@@ -171,6 +191,25 @@ Bu ifadelerden biri geldiğinde şu akışı uygula:
 "80'ler synthpop gece sürüşü için playlist yap ve Spotify'a ekle"
 → Konsept üret → spotify-api → playlist oluştur → track ekle
 ```
+
+---
+
+## 2025-2026 Trend Radar
+
+Yeni ortaya çıkan ve yükselen genre'lar — kullanıcı bu tarzları talep ettiğinde veya "güncel", "yeni çıkan", "2025 trendi" gibi ifadeler kullandığında bu bölümü uygula.
+
+| Genre | Tanım | Öncü Sanatçılar | Spotify Tags |
+|-------|-------|-----------------|--------------|
+| **PluggnB** | Dreamy plugg trap + 90s R&B füzyonu; melankolik ama dans edilebilir | Summrs, SoFaygo, Yeat (erken) | `#pluggnb` `#plugg` `#dreamy-trap` `#r&b` `#chill` |
+| **Afrofuturism** | Geleneksel Afrika enstrümanları + futuristik elektronik prodüksiyon | Mdou Moctar, Ebo Krdum, Burna Boy | `#afrofuturism` `#african-electronic` `#experimental` `#world` |
+| **Nu-Metal Revival** | Deftones/Korn/SOAD TikTok yeniden keşfi; yeni kuşak ağır ses | Spiritbox, Bad Omens, Knocked Loose | `#nu-metal` `#metal` `#heavy` `#alternative` `#2000s-revival` |
+| **WorldPop** | Latin + Afrobeats + EDM füzyonu; Gen-Z cross-kültürel keşfi | Peso Pluma + Burna Boy collabs, Rema | `#worldpop` `#latin` `#afrobeats` `#global` `#dance` |
+| **African Electronic** | Amapiano + Afro House küresel yayılım (+700% büyüme) | DJ Maphorisa, Uncle Waffles, Black Coffee | `#amapiano` `#afro-house` `#african-electronic` `#dance` |
+| **Hybrid/Maximalism** | Katmanlı, çoklu-etki ses tasarımı; her şeyi aynı anda | Caroline Polachek, Charli XCX, Bladee | `#maximalist` `#art-pop` `#hyperpop` `#experimental` |
+| **Türk Trap / Drill** | Lokal trap beat, Türkçe akış; SoundCloud/TikTok ekosistemi | BLOK3, Ati242, Lvbel C5, Era7capone | `#turkish-trap` `#turkish-drill` `#türkçe-rap` `#street` |
+
+> **Not:** Rock genel olarak 2025'te +%29 dinleyici artışıyla sürpriz yaptı. Country da +%20 büyüdü.
+> Bu genre'lar için daha geniş bağlam → `references/decades.md` (2020s bölümü).
 
 ---
 
